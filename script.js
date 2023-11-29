@@ -1,6 +1,6 @@
 function hidesidebar(){
-    const navbar = document.querySelector("navbar")
+    const navbar = document.getElementById("navbar")
     const tabel = document.querySelector("tabel")
-    navbar.classList.toggle("hidden")
+    navbar.style.width = "0";
 }
   

@@ -30,8 +30,8 @@
     </div>
 
     <div class="flex w-screen">
-        <nav class="px-10 fixed top-20 inset-x-0 w-max bg-white py-5 h-screen navbar" >
-            <button onclick="hidenavbar()" class="w-max h-max p-2 bg-white rounded-md absolute right-[-10px] shadow-sm hover:shadow-xl transition-all duration-500 text-neutral-500 hover:text-neutral-800 top-0 bottom-0 m-auto">
+        <nav class="px-10 fixed top-20 inset-x-0 w-max bg-white py-5 h-screen" id="navbar" >
+            <button onclick="hidesidebar()" class="w-max h-max p-2 bg-white rounded-md absolute right-[-10px] shadow-sm hover:shadow-xl transition-all duration-500 text-neutral-500 hover:text-neutral-800 top-0 bottom-0 m-auto">
                 <
             </button>
 
@@ -46,7 +46,7 @@
             <hr class="w-full mt-3">
 
             <h3 class="text-neutral-400 mt-5 tracking-wide">Activity</h3>
-            <a href="" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="kajidokumen.html" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -55,7 +55,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Kaji Dokumen</h3>
             </a>
-            <a href="" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="wawancara.html" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -64,7 +64,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Wawancara</h3>
             </a>
-            <a href="" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="score.html" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -73,7 +73,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Score</h3>
             </a>
-            <a href="" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="konversinilai.html" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -82,7 +82,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Konversi Nilai</h3>
             </a>
-            <a href="" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="lainnya.html" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -153,13 +153,58 @@
                             class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
                             Internalisasi budaya Risiko dalam budaya perusahaan
                         </td>
-                        <td class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="text" id="kutipandanbukti" class="w-full" rows="20"></textarea>
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="text" id="temuandangap" class="w-full" rows="20"></textarea>
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="text" id="sumberdata" class="w-full" rows="20"></textarea>
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="number" id="nilai" class="w-full" rows="20"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi tempora consequatur
+                            mollitia dicta facilis earum non velit aperiam temporibus beatae aliquam, sequi
+                            perspiciatis, ad porro, eos laudantium delectus suscipit.
+
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi tempora consequatur
+                            mollitia dicta facilis earum non velit aperiam temporibus beatae aliquam, sequi
+                            perspiciatis, ad porro, eos laudantium delectus suscipit.
+
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi tempora consequatur
+                            mollitia dicta facilis earum non velit aperiam temporibus beatae aliquam, sequi
+                            perspiciatis, ad porro, eos laudantium delectus suscipit.
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi tempora consequatur
+                            mollitia dicta facilis earum non velit aperiam temporibus beatae aliquam, sequi
+                            perspiciatis, ad porro, eos laudantium delectus suscipit.
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi tempora consequatur
+                            mollitia dicta facilis earum non velit aperiam temporibus beatae aliquam, sequi
+                            perspiciatis, ad porro, eos laudantium delectus suscipit.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="text" id="kutipandanbukti" class="w-full" rows="20"></textarea>
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="text" id="temuandangap" class="w-full" rows="20"></textarea>
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="text" id="sumberdata" class="w-full" rows="20"></textarea>
+                        </td>
+                        <td class="text-gray-900 whitespace-no-wrap border border-gray-200 bg-white text-sm">
+                            <textarea type="number" id="nilai" class="w-full" rows="20"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-5 py-5 border border-gray-200 bg-white text-sm">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi tempora consequatur
@@ -197,3 +242,5 @@
 </body>
 
 </html>
+
+<script src="script.js"></script>
