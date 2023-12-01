@@ -12,6 +12,7 @@ function hidesidebar(){
     } else {
         const navbarwidth = navbar.offsetWidth
         navbar.style.left = "-" + navbarwidth + "px";
+        
         table.style.marginLeft = "-10rem"
         button.style.right = "-20px"
         button.innerHTML = ">"
