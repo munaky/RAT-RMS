@@ -1,3 +1,17 @@
+<?php 
+    session_start();
+
+    include('Data.php');
+
+
+    if($_POST['username'] == $username && $_POST['password'] == $password){
+        $_SESSION['username'] = $_POST['username'];
+        $_SESSION['password'] = $_POST['password'];
+
+        header('Location: dashboard.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +32,11 @@
         </div>
 
 
-        <form action="" class="w-max h-max flex flex-col">
+        <form method="post" class="w-max h-max flex flex-col">
             <h5 class="text-neutral-500 tracking-wide mt-14 mb-2 font-light text-sm">Username</h5>
-            <input type="text" class="border border-neutral-300 rounded-md px-3 py-2 w-[25rem]">
+            <input name="username" type="text" class="border border-neutral-300 rounded-md px-3 py-2 w-[25rem]">
             <h5 class="text-neutral-500 tracking-wide mt-4 mb-2 font-light text-sm">Password</h5>
-            <input type="text" class="border border-neutral-300 rounded-md px-3 py-2 w-[25rem]">
+            <input name="password" type="text" class="border border-neutral-300 rounded-md px-3 py-2 w-[25rem]">
 
             <input type="submit" value="Login" class=" hover:bg-neutral-800 transition0-all duration-500
             w-[25rem] bg-neutral-200 font-semibold text-white text-lg rounded-lg py-2 mt-8">

@@ -19,4 +19,10 @@ function hidesidebar(){
     }
     sidebarhidden = !sidebarhidden
 }
-  
+
+
+function changeValue(subdimension, content, index, value){
+    console.log('changed on subdimension: ' + subdimension + '\ncontent: ' + content + '\nindex: ' + index + '\nvalue: ' + value);
+
+    fetch('handle_input.php?subdimension=' + subdimension + '&content=' + content + '&index=' + index + '&value=' + value);
+}

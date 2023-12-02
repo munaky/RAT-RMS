@@ -1,3 +1,13 @@
+<?php 
+session_start();
+
+include('Data.php');
+
+if($_SESSION['username'] != $username && $_SESSION['password'] != $password){
+    header('location: login.php');
+};
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +22,7 @@
 <body class="bg-neutral-100">
     <div class="flex fixed top-0 inset-x-0 z-50 px-7 py-3 bg-white items-center justify-between">
         <div class="flex items-center space-x-10">
-            <a href="dashboard.html">
+            <a href="dashboard.php">
                 <img src="./assets/logo.png" alt="logo" class="w-10">
             </a>
             <div class="flex w-max h-max relative">
@@ -48,7 +58,7 @@
             <hr class="w-full mt-3">
 
             <h3 class="text-neutral-400 mt-5 tracking-wide">Activity</h3>
-            <a href="kajidokumen.html" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="kajidokumen.php" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -57,7 +67,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Kaji Dokumen</h3>
             </a>
-            <a href="wawancara.html" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="wawancara.php" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -66,7 +76,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Wawancara</h3>
             </a>
-            <a href="score.html" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="score.php" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -75,7 +85,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Score</h3>
             </a>
-            <a href="konversinilai.html" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="konversinilai.php" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -84,7 +94,7 @@
 
                 <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Konversi Nilai</h3>
             </a>
-            <a href="lainnya.html" class="flex items-end justify-start space-x-2 mt-3 group">
+            <a href="lainnya.php" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z"
@@ -96,7 +106,7 @@
         </nav>
 
 
-        <a href="wawancara.html" class="mt-20 grid grid-cols-5 p-14 transition-all w-full h-screen duration-500" style="margin-left:13rem;" id="table">
+        <a href="wawancara.php?project=Project 1" class="mt-20 grid grid-cols-5 p-14 transition-all w-full h-screen duration-500" style="margin-left:13rem;" id="table">
             <div style=" cursor:pointer" class="bg-white w-max h-[10rem] px-6 flex flex-col items-center shadow-md hover:shadow-lg hover:scale-105 transition-all duration-500 shadow-neutral-200 justify-center rounded-md">
                 <h1 class="font-semibold text-3xl mb-3">Project 1</h1>
                 <p class="text-neutral-500 text-sm">30 Nov 2023 05:22:13 GMT</p>
