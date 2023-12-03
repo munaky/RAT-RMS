@@ -14,6 +14,6 @@ include('Database.php');
     <title>Document</title>
 </head>
 <body>
-    <?php echo str_replace('"', '\\"', json_encode($_SESSION['data']))?>
+    <?php var_dump($db->query("SELECT * FROM `users` WHERE `username` = 'admin' AND `password` = 'admin'")->fetch_assoc()['role']);?>
 </body>
 </html>

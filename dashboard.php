@@ -4,7 +4,7 @@ session_start();
 include('Data.php');
 include('Database.php');
 
-if ($_SESSION['username'] != $username && $_SESSION['password'] != $password) {
+if (!$_SESSION['username'] && !$_SESSION['password']) {
     header('location: login.php');
 };
 
@@ -81,7 +81,7 @@ $projects = getProjects();
         <div class="mt-20 grid grid-cols-5 p-14 transition-all w-full h-max duration-500" style="margin-left:13rem;" id="table">
             <?php foreach ($projects as $project) { ?>
 
-                <a href="wawancara.php?id=<?php echo $project['id'] ?>&project=<?php echo $project['name'] ?>" style=" cursor:pointer" class="bg-white h-[10rem] px-6 flex flex-col w-[15rem] items-center shadow-md hover:shadow-lg hover:scale-105 transition-all duration-500 shadow-neutral-200 justify-center rounded-md">
+                <a href="kajidokumen.php?id=<?php echo $project['id'] ?>&project=<?php echo $project['name'] ?>" style=" cursor:pointer" class="bg-white h-[10rem] px-6 flex flex-col w-[15rem] items-center shadow-md hover:shadow-lg hover:scale-105 transition-all duration-500 shadow-neutral-200 justify-center rounded-md">
                     <h1 class="font-semibold text-3xl mb-3"><?php echo $project['name'] ?></h1>
                     <p class="text-neutral-500 text-sm">30 Nov 2023 05:22:13 GMT</p>
                 </a>

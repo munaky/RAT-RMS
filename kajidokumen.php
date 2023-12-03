@@ -4,7 +4,7 @@ session_start();
 include('Data.php');
 include('Database.php');
 
-if ($_SESSION['username'] != $username && $_SESSION['password'] != $password) {
+if (!$_SESSION['username'] && !$_SESSION['password']) {
     header('location: login.php');
 };
 

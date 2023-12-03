@@ -2,11 +2,18 @@
     session_start();
 
     include('Data.php');
+    include('Database.php');
 
+    if(isset($_POST['username']) && isset($_POST['password'])){
+        $username = $_POST['username'];
+        $password = $_POST['password'];
 
-    if($_POST['username'] == $username && $_POST['password'] == $password){
-        $_SESSION['username'] = $_POST['username'];
-        $_SESSION['password'] = $_POST['password'];
+        $user = $db->query("SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password'")->fetch_assoc();
+
+        $_SESSION['name'] = $user['name'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['password'] = $user['password'];
+        $_SESSION['role'] = $user['role'];
 
         header('Location: dashboard.php');
     }
