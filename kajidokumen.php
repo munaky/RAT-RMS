@@ -87,11 +87,11 @@ if ($_REQUEST['id']) {
             <table class="table-auto m-10 rounded-lg overflow-hidden w-[120rem]">
                 <thead>
                 <tr>
-                        <th rowspan="2" class="px-2 py-2 bg-blue-900 text-center text-xs w-[8rem] font-semibold text-white uppercase tracking-wider">Parameter</th>
-                        <th rowspan="2" class="px-2 py-2 bg-blue-400 text-center text-xs w-[8rem] font-semibold text-gray-700 uppercase tracking-wider">Kutipan dan Bukti Penting</th>
-                        <th rowspan="2" class="px-2 py-2 bg-blue-400 text-center text-xs w-[8rem] font-semibold text-gray-700 uppercase tracking-wider">Temuan/Gap Utama</th>
-                        <th rowspan="2" class="px-2 py-2 bg-blue-400 text-center text-xs w-[8rem] font-semibold text-gray-700 uppercase tracking-wider">Sumber Data/Referensi</th>
-                        <th rowspan="2" class="px-4 py-2 bg-blue-400 text-center text-xs w-[6rem] font-semibold text-gray-700 uppercase tracking-wider">Nilai</th>
+                        <th rowspan="2" class="px-2 py-2 bg-blue-900 text-center text-xs w-[4rem] font-semibold text-white uppercase tracking-wider">Parameter</th>
+                        <th rowspan="2" class="px-2 py-2 bg-blue-400 text-center text-xs w-[4rem] font-semibold text-gray-700 uppercase tracking-wider">Kutipan dan Bukti Penting</th>
+                        <th rowspan="2" class="px-2 py-2 bg-blue-400 text-center text-xs w-[4rem] font-semibold text-gray-700 uppercase tracking-wider">Temuan/Gap Utama</th>
+                        <th rowspan="2" class="px-2 py-2 bg-blue-400 text-center text-xs w-[4rem] font-semibold text-gray-700 uppercase tracking-wider">Sumber Data/Referensi</th>
+                        <th rowspan="2" class="px-4 py-2 bg-blue-400 text-center text-xs w-[2rem] font-semibold text-gray-700 uppercase tracking-wider">Nilai</th>
                     
                         <th colspan="5" class="px-2 py-2 border border-blue-500 bg-blue-900 text-center text-xs font-semibold text-white uppercase tracking-wider">Kriteria Parameter Ukur</th>
                     </tr>
