@@ -60,13 +60,6 @@ $projects = getProjects();
 
                         <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Kaji Dokumen</h3>
                     </a>
-                    <a href="wawancara.php" class="flex items-end justify-start space-x-2 mt-3 group">
-                        <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z" fill="#8E8E8E" />
-                        </svg>
-
-                        <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Wawancara</h3>
-                    </a>
                     <a href="score.php" class="flex items-end justify-start space-x-2 mt-3 group">
                         <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z" fill="#8E8E8E" />
@@ -74,19 +67,12 @@ $projects = getProjects();
 
                         <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Score</h3>
                     </a>
-                    <a href="konversinilai.php" class="flex items-end justify-start space-x-2 mt-3 group">
+                    <a href="report.php" class="flex items-end justify-start space-x-2 mt-3 group">
                         <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z" fill="#8E8E8E" />
                         </svg>
 
-                        <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Konversi Nilai</h3>
-                    </a>
-                    <a href="lainnya.php" class="flex items-end justify-start space-x-2 mt-3 group">
-                        <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z" fill="#8E8E8E" />
-                        </svg>
-
-                        <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Lainnya</h3>
+                        <h3 class="text-neutral-400 font-light tracking-wide mb-[-4px] group-hover:text-neutral-800 transition-all duration-500" style="cursor: pointer;">Report</h3>
                     </a>
         </nav>
 
