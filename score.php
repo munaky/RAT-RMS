@@ -2,10 +2,15 @@
 session_start();
 
 include('Data.php');
+include('Database.php');
 
 if ($_SESSION['username'] != $username && $_SESSION['password'] != $password) {
     header('location: login.php');
 };
+
+updateDataById($_SESSION['id']);
+
+
 
 ?>
 <!DOCTYPE html>
@@ -120,7 +125,7 @@ if ($_SESSION['username'] != $username && $_SESSION['password'] != $password) {
                             </td>
 
                             <td rowspan="3" class="text-gray-900 whitespace-no-wrap border p-5 border-gray-400 bg-white text-sm  pr-3">
-                            <?php echo (((round(array_sum($_SESSION['subd2']['a'])) + round(array_sum($_SESSION['subd2']['b']))) / 2) + round(array_sum($_SESSION['subd1']['a']))) / 2?>
+                            <?php echo (((round(array_sum($_SESSION['data']['dimension1']['sub2']['a'])) + round(array_sum($_SESSION['data']['dimension1']['sub2']['b']))) / 2) + round(array_sum($_SESSION['data']['dimension1']['sub1']['a']))) / 2?>
                         </td>
 
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm  pr-3">
@@ -128,16 +133,16 @@ if ($_SESSION['username'] != $username && $_SESSION['password'] != $password) {
                             </td>
 
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm  pr-3">
-                            <?php echo round(array_sum($_SESSION['subd1']['a'])) ?>    
+                            <?php echo round(array_sum($_SESSION['data']['dimension1']['sub1']['a'])) ?>    
                         </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm  pr-3">
                                 1. Internalisasi budaya Risiko dalam budaya perusahaan
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm  pr-3">
-                                <?php echo array_sum($_SESSION['subd1']['a']) ?>
+                                <?php echo array_sum($_SESSION['data']['dimension1']['sub1']['a']) ?>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm  pr-3">
-                                <?php echo round(array_sum($_SESSION['subd1']['a'])) ?>
+                                <?php echo round(array_sum($_SESSION['data']['dimension1']['sub1']['a'])) ?>
                             </td>
                         </tr>
                         <tr>
@@ -145,16 +150,16 @@ if ($_SESSION['username'] != $username && $_SESSION['password'] != $password) {
                                 A2. Kapabilitas Risiko
                             </td>
                             <td rowspan="2" class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm pr-3">
-                        <?php echo (round(array_sum($_SESSION['subd2']['a'])) + round(array_sum($_SESSION['subd2']['b']))) / 2 ?>    
+                        <?php echo (round(array_sum($_SESSION['data']['dimension1']['sub2']['a'])) + round(array_sum($_SESSION['data']['dimension1']['sub2']['b']))) / 2 ?>    
                         </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm pr-3">
                                 2.Peran Penilaian RMI dalam upaya peningkatan praktik Manajemen Risiko
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm pr-3">
-                            <?php echo array_sum($_SESSION['subd2']['a']) ?>    
+                            <?php echo array_sum($_SESSION['data']['dimension1']['sub2']['a']) ?>    
                         </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm pr-3">
-                            <?php echo round(array_sum($_SESSION['subd2']['a'])) ?>    
+                            <?php echo round(array_sum($_SESSION['data']['dimension1']['sub2']['a'])) ?>    
                         </td>
                         </tr>
                         <tr>
@@ -162,10 +167,10 @@ if ($_SESSION['username'] != $username && $_SESSION['password'] != $password) {
                                 3. Program peningkatan keahlian Risiko
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm pr-3">
-                            <?php echo array_sum($_SESSION['subd2']['b']) ?>     
+                            <?php echo array_sum($_SESSION['data']['dimension1']['sub2']['b']) ?>     
                         </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 p-5 bg-white text-sm pr-3">
-                            <?php echo round(array_sum($_SESSION['subd2']['b'])) ?>       
+                            <?php echo round(array_sum($_SESSION['data']['dimension1']['sub2']['b'])) ?>       
                         </td>
                         </tr>
                     </div>

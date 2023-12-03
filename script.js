@@ -21,8 +21,8 @@ function hidesidebar(){
 }
 
 
-function changeValue(subdimension, content, index, value){
-    console.log('changed on subdimension: ' + subdimension + '\ncontent: ' + content + '\nindex: ' + index + '\nvalue: ' + value);
+function changeValue(dimension, subdimension, content, index, value){
+    console.log('changed on \ndimension: ' + dimension + '\nsubdimension: ' + subdimension + '\ncontent: ' + content + '\nindex: ' + index + '\nvalue: ' + value);
 
-    fetch('handle_input.php?subdimension=' + subdimension + '&content=' + content + '&index=' + index + '&value=' + value);
+    fetch('handle_input.php?dimension=' + dimension + '&subdimension=' + subdimension + '&content=' + content + '&index=' + index + '&value=' + value);
 }

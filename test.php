@@ -1,7 +1,10 @@
-<?php session_start(); ?>
+<?php 
+session_start(); 
+include('Database.php');
+?>
 <script>
-    var subd1 = JSON.parse('<?php echo json_encode($_SESSION['subd1']) ?>');
-    console.log(subd1);
+    var xxx = JSON.parse('<?php echo json_encode($_SESSION['data']) ?>');
+    console.log(xxx);
 </script>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +14,6 @@
     <title>Document</title>
 </head>
 <body>
-<?php echo array_sum($_SESSION['subd1']['a']) ?>
+    <?php echo str_replace('"', '\\"', json_encode($_SESSION['data']))?>
 </body>
 </html>
