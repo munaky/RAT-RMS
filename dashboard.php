@@ -87,9 +87,11 @@ $projects = getProjects();
                 </a>
             <?php }; ?>
 
+            <?php if($_SESSION['role'] == 'admin'){?>
             <button onclick="toggleModal()" class="bg-white w-[15rem] h-[10rem] px-6 flex flex-col text-neutral-400 hover:text-neutral-800 items-center shadow-md hover:shadow-lg hover:scale-105 transition-all duration-500 shadow-neutral-200 justify-center rounded-md">
                 <h1 class="font-semibold text-3xl">+</h1>
             </button>
+            <?php }?>
         </div>
 
     </div>

@@ -130,16 +130,16 @@ if ($_REQUEST['id']) {
                                 1. Internalisasi budaya Risiko dalam budaya perusahaan
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 0, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 0, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Telah ada program penanaman budaya risiko yang sedang dijalankan (misal risk awards, kampanye, risk townhall, dan sebagainya) dan terdapat program sadar risiko, saat ini dilakukan secara rutin dan lebih sering (lebih dari satu kali dalam setahun),
@@ -158,16 +158,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 1, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 1, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Telah ada evaluasi terhadap peningkatan budaya risiko (misal survei budaya risiko) termasuk mengumpulkan masukan dari pegawai untuk pengembangan program budaya risiko
@@ -184,16 +184,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 2, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 2, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Tanggung jawab pengembangan budaya risiko secara jelas diemban dan tercantum pada peran dan tanggung jawab jabatan tidak hanya untuk organ pengelola risiko (misal Komisaris, Direktur Utama, staf Manajemen Risiko), tetapi juga untuk pegawai di Tiga Lini Pertahanan (khususnya yang memegang posisi manajerial) </td>
@@ -210,16 +210,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 3, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 3, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Balance scorecard antara Risiko dan Unit Bisnis saling berkaitan (Bisnis memiliki KPI risiko, dan Risiko memiliki KPI bisnis); hal-hal yang berkaitan dengan budaya risiko diperhitungkan dalam proses kepegawaian (misal perekrutan, promosi, dan keputusan evaluasi/insentif)
@@ -238,16 +238,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 4, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 4, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Program penanaman budaya risiko saat ini berjalan efektif, terbukti dari kenaikan skor kematangan risiko (misal kenaikan di Dimensi budaya risiko)
@@ -264,16 +264,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 5, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 5, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Budaya risiko menjadi bagian integral dari budaya perusahaan (“ini cara kerja kami”). Budaya risiko tercantum pada kebijakan budaya kerja yang disosialisasikan di perusahaan, dan budaya ini tertanam di seluruh lini perusahaan dimulai dengan penegasan dari jajaran manajemen, diperkuat dengan langkah nyata (yang juga dapat digunakan sebagai kriteria evaluasi kinerja pegawai): </td>
@@ -289,16 +289,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 6, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 6, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 a. Cepat mengantisipasi potensi risiko dan menanggapinya dengan tepat
@@ -318,16 +318,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 7, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 7, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 b. Menyeimbangkan target jangka pendek dan risiko jangka panjang
@@ -343,16 +343,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 8, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 8, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 c. Rutin mengadakan pembahasan risiko saat diperlukan, bahkan jika pembahasannya dianggap sulit
@@ -368,16 +368,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 9, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 9, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 d. Mendukung pelaksanaan inisiatif Manajemen Risiko dan secara ketat menerapkan pedoman Manajemen Risiko
@@ -393,16 +393,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 10, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 10, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 e. Resiliensi (contohnya resiliensi operasional, tanggap merespons peristiwa yang merugikan, dan sebagainya, dengan memberi penekanan baik dalam penyusunan strategi maupun dalam pelaksanaannya)
@@ -418,16 +418,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 11, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 11, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Telah ada serangkaian sistem penunjang untuk pelaksanaan dan penanaman program budaya risiko perusahaan, contohnya:
@@ -443,16 +443,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 12, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 12, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 a. o Intranet perusahaan untuk memuat informasi yang dapat diakses mengenai program budaya risiko dan kebijakan risiko perusahaan
@@ -468,16 +468,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 13, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 13, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 b. o Tersedia dashboard untuk memantau metrik yang berkaitan dengan budaya risiko/program budaya risiko
@@ -493,16 +493,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 14, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 14, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 Telah ada bukti yang jelas atas kinerja implementasi program budaya risiko, di antaranya:
@@ -517,16 +517,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 15, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 15, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 a. Bukti perbaikan indikator utama berkaitan dengan budaya risiko perusahaan, di antaranya penurunan jumlah kasus kecurangan internal, korupsi, dan pelanggaran kode etika pegawai, beserta penurunan jumlah kerugian dari kasus pelanggaran tersebut
@@ -542,16 +542,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 16, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 16, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 b. Penyelesaian penuh program budaya risiko bagi pegawai yang telah direncanakan dalam periode pelaporan
@@ -567,16 +567,16 @@ if ($_REQUEST['id']) {
                         </tr>
                         <tr>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                                <textarea onchange="changeValue('dimension1', 'sub1', 'a', 17, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                                <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub1', 'a', 17, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                             </td>
                             <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                                 BUMN dengan skor maturitas pada parameter ini telah menerapkan tata kelola risiko yang dapat berpengaruh pada tercapainya kinerja keuangan & non-keuangan yang bersumber dari operasional BUMN yaitu >110% dari target RKAP
@@ -605,16 +605,16 @@ if ($_REQUEST['id']) {
                             2. Peran Penilaian RMI dalam upaya peningkatan praktik Manajemen Risiko
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 0, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 0, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada penilaian Indeks Kematangan Risiko yang telah diformalisasikan ke dalam kebijakan risiko perusahaan
@@ -634,16 +634,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 1, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 1, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Penilaian dilakukan secara rutin (setiap tahun) dan telah dilaksanakan dengan baik di level Holding dan setiap anak perusahaan (jika relevan)
@@ -662,16 +662,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 2, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 2, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Penilaian mencakup seluruh Dimensi utama risiko (misal budaya risiko, tata kelola risiko, kerangka Enterprise Risk Management, kepatuhan risiko, proses dan kontrol risiko, dan teknologi risiko)
@@ -691,16 +691,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 3, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 3, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada rencana perbaikan berdasarkan hasil penilaian tingkat kematangan risiko dengan tindak lanjut yang jelas (terdapat inisiatif mendetail dengan penanggung jawab, tata waktu implementasi terperinci)
@@ -720,16 +720,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 4, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 4, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Metode penilaian risiko diperbarui secara periodik untuk mengimplementasikan praktik terbaik terkini (tidak ada budaya 'cepat merasa puas')
@@ -748,16 +748,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 5, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 5, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada pemantauan progres implementasi rencana perbaikan, milestone/bukti dokumentasi penting tersimpan dan terdokumentasi
@@ -776,16 +776,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 6, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 6, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada sosialisasi hasil penilaian dan pemantauan progres yang terdokumentasi dengan baik kepada manajemen (misal Direksi) serta pemangku kepentingan terkait (misal semua personel risiko manajemen, beserta personel Lini Pertama/Lini Ketiga terkait) untuk memperkuat kepemilikan kematangan risiko di antara semua pihak yang berkepentingan
@@ -802,16 +802,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 7, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 7, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah dilakukan verifikasi/audit penilaian kematangan risiko oleh pihak independen (misal audit internal, atau tinjauan oleh pihak eksternal independen) sebagai “check-andbalance” untuk meminimalisir potensi bias dalam penilaian
@@ -828,16 +828,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 8, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 8, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada bukti yang jelas atas kinerja implementasi Indeks Kematangan Risiko, di antaranya:
@@ -857,16 +857,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 9, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 9, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             A. Peningkatan nilai Indeks Kematangan Risiko secara year-on-year, baik di level Holding maupun anak perusahaan (jika relevan)
@@ -882,16 +882,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 10, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 10, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             B. Inisiatif dan rencana tindakan perbaikan dilaksanakan sepenuhnya (100%) selama periode pelaporan sesuai dengan peta jalan dan tata waktu yang telah disusun
@@ -907,16 +907,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'a', 11, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'a', 11, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             BUMN dengan skor maturitas pada parameter ini telah menerapkan tata kelola risiko yang dapat berpengaruh pada tercapainya kinerja keuangan & non-keuangan yang bersumber dari operasional BUMN yaitu >110% dari target RKAP
@@ -944,16 +944,16 @@ if ($_REQUEST['id']) {
                             3. Program peningkatan keahlian risiko
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 0, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 0, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada program peningkatan keahlian risiko
@@ -973,16 +973,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 1, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 1, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Program dapat diakses oleh semua pegawai
@@ -1002,16 +1002,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 2, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 2, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Program disesuaikan dengan tingkat keahlian/jabatan, khususnya untuk personel risiko dan anggota Dewan Komisaris/Direksi
@@ -1032,16 +1032,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 3, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 3, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Topik program bersifat komprehensif (mencakup seluruh pilar manajemen risiko seperti budaya risiko, tata kelola risiko, kerangka Enterprise Risk Management dan kepatuhan risiko, proses dan kontrol risiko, dan teknologi risiko (misal data, sistem, model)
@@ -1062,16 +1062,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 4, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 4, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Program bersifat wajib dan rutin (paling sedikit satu kali dalam setahun), dan telah diterapkan sanksi untuk ketidakhadiran
@@ -1091,16 +1091,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 5, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 5, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
 
@@ -1119,16 +1119,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 6, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 6, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Kurikulum ditinjau secara rutin dan formal berdasarkan kebutuhan pelatihan pegawai, serta melalui proses pembaruan setiap tahun untuk memastikan kualitasnya dan diperbarui agar sesuai dengan risiko-risiko utama dan praktik terbaik Manajemen Risiko (misal terus diperbarui dengan standar internasional terkini)
@@ -1149,16 +1149,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 7, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 7, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada “feedback-loop”/pengumpulan feedback terdokumentasi dari pegawai yang telah menerima pelatihan risiko, untuk menilai manfaat dari pelatihan risiko terhadap keahlian pegawai dalam menjalankan pekerjaannya, serta memberikan masukan untuk pengembangan program pelatihan secara berkesinambungan
@@ -1175,16 +1175,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 8, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 8, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah dilakukan analisis untuk menilai keberhasilan/ruang perbaikan program, termasuk area-area di mana pegawai belum menunjukkan kinerja yang baik dan membutuhkan pelatihan/tes lebih lanjut pada siklus pelatihan berikutnya
@@ -1203,16 +1203,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 9, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 9, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Perusahaan terus melakukan terobosan dalam pembelajaran melalui kolaborasi dengan penyedia program pelatihan Manajemen Risiko sesuai industri yang dijalankannya untuk mengedukasi pegawainya terkait praktik terbaik global Manajemen Risiko (khususnya untuk pegawai di jabatan Manajemen penting/personel Unit Bisnis dan divisi Manajemen Risiko)
@@ -1230,16 +1230,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 10, this.value)" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 10, this.value)" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Telah ada bukti yang jelas atas kinerja implementasi pelatihan risiko, di antaranya:
@@ -1258,16 +1258,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 11, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 11, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Penyelesaian penuh untuk pelatihan wajib terkait manajemen risiko/kesadaran risiko untuk semua pegawai
@@ -1286,16 +1286,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 12, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 12, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Penyelesaian penuh untuk pelatihan wajib terkait manajemen risiko/kesadaran risiko untuk semua pegawai
@@ -1314,16 +1314,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 13, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 13, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             Penyelesaian penuh untuk pelatihan wajib terkait manajemen risiko/kesadaran risiko untuk semua pegawai
@@ -1342,16 +1342,16 @@ if ($_REQUEST['id']) {
                     </tr>
                     <tr>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="kutipandanbukti" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="temuandangap" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> type="text" id="sumberdata" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap border border-gray-400 bg-white text-xl font-bold">
-                            <textarea onchange="changeValue('dimension1', 'sub2', 'b', 14, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
+                            <textarea <?php if($_SESSION['role'] == 'user'){ echo 'disabled'; } ?> onchange="changeValue('dimension1', 'sub2', 'b', 14, this.value)" type="number" id="nilai" class="w-full text-center" style="height: 100px; display: flex; align-items: center; justify-content: center;"></textarea>
                         </td>
                         <td class="text-gray-900 whitespace-no-wrap px-3 py-3 border border-gray-400 bg-white text-sm align-top">
                             BUMN dengan skor maturitas pada parameter ini telah menerapkan tata kelola risiko yang dapat berpengaruh pada tercapainya kinerja keuangan & non-keuangan yang bersumber dari operasional BUMN yaitu >110% dari target RKAP
