@@ -64,46 +64,7 @@ if ($_REQUEST['id']) {
 
                 <h3 class="tracking-wide mb-[-4px] text-neutral-800 transition-all duration-500" style="cursor: pointer;">Kaji Dokumen</h3>
             </a>
-            <div class="flex flex-col justify-start items-center px-6  w-full">
-
-                <button onclick="showMenu1(true)" class="focus:outline-none focus:text-indigo-400 text-left  text-gray-500 flex justify-between items-center w-full py-5 space-x-14  ">
-                    <p class="text-sm leading-5 text-gray-500">Dimensi</p>
-                    <svg id="icon1" class="transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <div id="menu1" class="flex justify-start  flex-col w-full md:w-auto items-start pb-1 ">
-
-                    <ul class="w-48 text-sm text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                        <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="Sub dimensi 1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="Sub dimensi 1" class="w-full py-3 ms-2 text-sm  text-gray-900 dark:text-gray-300">Sub dimensi 1</label>
-                            </div>
-                        </li>
-                        <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="Sub dimensi 1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="Sub dimensi 1" class="w-full py-3 ms-2 text-sm  text-gray-900 dark:text-gray-300">Sub dimensi 1</label>
-                            </div>
-                        </li>
-                        <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="Sub dimensi 1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="Sub dimensi 1" class="w-full py-3 ms-2 text-sm  text-gray-900 dark:text-gray-300">Sub dimensi 1</label>
-                            </div>
-                        </li>
-                        <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                            <div class="flex items-center ps-3">
-                                <input id="Sub dimensi 1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="Sub dimensi 1" class="w-full py-3 ms-2 text-sm  text-gray-900 dark:text-gray-300">Sub dimensi 1</label>
-                            </div>
-                        </li>
-                    </ul>
-
-
-                </div>
-            </div>
+            
             <a href="score.php" class="flex items-end justify-start space-x-2 mt-3 group">
                 <svg width="12" height="17" viewBox="0 0 34 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M30.2222 4.3H22.3267C21.5333 1.806 19.4556 0 17 0C14.5444 0 12.4667 1.806 11.6733 4.3H3.77778C1.7 4.3 0 6.235 0 8.6V38.7C0 41.065 1.7 43 3.77778 43H30.2222C32.3 43 34 41.065 34 38.7V8.6C34 6.235 32.3 4.3 30.2222 4.3ZM17 4.3C18.0389 4.3 18.8889 5.2675 18.8889 6.45C18.8889 7.6325 18.0389 8.6 17 8.6C15.9611 8.6 15.1111 7.6325 15.1111 6.45C15.1111 5.2675 15.9611 4.3 17 4.3ZM20.7778 34.4H7.55556V30.1H20.7778V34.4ZM26.4444 25.8H7.55556V21.5H26.4444V25.8ZM26.4444 17.2H7.55556V12.9H26.4444V17.2Z" fill="#8E8E8E" />
@@ -1414,30 +1375,5 @@ if ($_REQUEST['id']) {
 </body>
 
 </html>
-
-<script>
-    let icon1 = document.getElementById("icon1");
-    let menu1 = document.getElementById("menu1");
-    const showMenu1 = (flag) => {
-        if (flag) {
-            icon1.classList.toggle("rotate-180");
-            menu1.classList.toggle("hidden");
-        }
-    };
-    let icon2 = document.getElementById("icon2");
-
-    const showMenu2 = (flag) => {
-        if (flag) {
-            icon2.classList.toggle("rotate-180");
-        }
-    };
-    let icon3 = document.getElementById("icon3");
-
-    const showMenu3 = (flag) => {
-        if (flag) {
-            icon3.classList.toggle("rotate-180");
-        }
-    };
-</script>
 
 <script src="script.js"></script>
